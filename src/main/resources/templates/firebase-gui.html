@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" lang="pl">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>View of single questionnaire</title>
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/main.css}"/>
+
+<!--    autorefresh co 10 s - szybkie obejscie dla ajaxa-->
+    <meta http-equiv="refresh" content="10">
+
+</head>
+<!--nie zaczytuje automatycznie danych do widoku jak aplikacja
+jakiś ajax to robi podobno-->
+<body>
+
+<p th:text="${name}"></p>
+
+<p th:text="${state}"></p>
+
+<p th:text="${religion}"></p>
+
+<p th:text="${country}"></p>
+
+<p>Regions:</p>
+
+<ul th:each="r:${regions}">
+    <li th:text="${r}"></li>
+</ul>
+
+</body>
+</html>

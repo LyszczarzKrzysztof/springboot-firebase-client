@@ -1,0 +1,4 @@
+Practice app based on https://youtu.be/tqRpcS2W-sA
+
+Connecting with Firebase, reading data from realtime Cloud Firestore and display it in very very simple thymeleaf view.
+To manage realtime displaying data in thymeleaf view, cyclical refreshing is used.
